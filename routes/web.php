@@ -11,6 +11,11 @@
 |
 */
 
+
+//Home Page Route
 Route::get('/', function () {
     return view('welcome');
 });
+
+//TestController Route
+Route::get('test', 'TestController@index');
