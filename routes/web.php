@@ -13,13 +13,11 @@
 
 
 //Home Page Route
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'auth.login');
 
 //TestController Route
 Route::get('test', 'TestController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
